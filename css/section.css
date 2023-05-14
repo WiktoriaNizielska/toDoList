@@ -1,0 +1,18 @@
+.section {
+    background: rgb(252, 252, 252);
+    margin: 10px 0;
+    box-shadow: 13px 15px 27px -57px rgba(161, 161, 164, 1);
+    max-width: 900px;
+}
+
+.section_header {
+    margin: 0;
+    border-bottom: 1px solid rgb(209, 203, 203);
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
+.section_body {
+    padding: 10px;
+    word-break: break-word;
+}
