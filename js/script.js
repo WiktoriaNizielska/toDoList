@@ -77,10 +77,8 @@
             addNewTask(newTaskContent);
             newTaskElement.value = "";
         }
-
+        
         newTaskElement.focus();
-
-
     };
 
     const init = () => {
