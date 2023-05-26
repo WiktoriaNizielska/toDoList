@@ -10,22 +10,22 @@
     }
 }
 
-.form_input {
+.form__input {
     padding: 10px;
     border: solid rgb(209, 203, 203) 1px;
 }
 
-.form_button {
+.form__button {
     background: teal;
     color: white;
     border: none;
     padding: 10px;
 }
 
-.form_button:hover {
-    background-color:rgb(6, 167, 167) ;
+.form__button:hover {
+    background-color: rgb(6, 167, 167);
 }
 
-.form_button:active {
-    background-color:rgb(13, 192, 192) ;
+.form__button:active {
+    background-color: rgb(13, 192, 192);
 }

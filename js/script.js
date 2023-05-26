@@ -10,7 +10,7 @@
         },
     ];
 
-    addNewTask = (newTaskContent) => {
+    const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
         });
@@ -45,20 +45,21 @@
         });
     }
 
-    render = () => {
+    const render = () => {
         let htmlString = " ";
 
         for (const task of tasks) {
             htmlString += `
-            <li class="tasks_item">
-            <button class ="tasks_button tasks_button--toggleDone js-toggleDone">
-            ${task.done ? "✔" : ""}
-            </button>
-            <span class="tasks_content${task.done ? " tasks_content--done" : ""}">${task.content}</span>
-            <button class ="tasks_button tasks_button--remove js-remove">
-            🗑
-            </button>
-            </li>
+             <li class="tasks__item">
+              <button class ="tasks__button tasks__button--toggleDone js-toggleDone">
+                ${task.done ? "✔" : ""}
+              </button>
+              <span class="tasks__content
+                ${task.done ? " tasks__content--done" : ""}">${task.content}</span>
+              <button class ="tasks__button tasks__button--remove js-remove">
+                🗑
+              </button>
+             </li>
             `;
         }
 
@@ -77,7 +78,7 @@
             addNewTask(newTaskContent);
             newTaskElement.value = "";
         }
-        
+
         newTaskElement.focus();
     };
 
