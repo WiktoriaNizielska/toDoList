@@ -23,6 +23,27 @@
     align-items: center;
     list-style: none;
     border-bottom: 1px solid rgb(209, 203, 203);
+
+}
+
+@media(max-width:767px) {
+    .section__container {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    .section__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+    }
+
+    .section__header--noneBorder {
+        align-self: flex-start;
+    }
 }
 
 .section__buttons {
