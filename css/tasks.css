@@ -12,12 +12,17 @@
     border-bottom: 1px solid rgb(209, 203, 203);
 }
 
+.tasks__item--hidden {
+    display: none;
+}
+
 .tasks__button {
     border: none;
     color: white;
     width: 30px;
     height: 30px;
     padding: 0;
+    transition: 0.7s;
 }
 
 .tasks__content--done {

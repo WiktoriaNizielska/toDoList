@@ -39,19 +39,11 @@
 
 
     const markAllTasks = () => {
-        tasks = [
-            { ...tasks, done: true },
-        ];
+        tasks = tasks.map((task) => (
+            { ...task, done: true }
+        ));
         render();
     };
-
-
-    // const markAllTasks = () => {
-    //     tasks = tasks.map((task) => (
-    //         { ...task, done: true }
-    //     ));
-    //     render();
-    // };
 
 
     const toggleAllTasksDone = () => {
@@ -99,8 +91,8 @@
 
         for (const task of tasks) {
             htmlString += `
-             <li class="tasks__item">
-              <button class ="tasks__button tasks__button--toggleDone js-toggleDone">
+             <li class="tasks__item ${task.done && hideDoneTasks ? "tasks__item--hidden" : ""} ">
+              <button class ="tasks__button tasks__button--toggleDone js-toggleDone ">
                 ${task.done ? "✔" : ""}
               </button>
               <span class="tasks__content
@@ -121,11 +113,12 @@
         if (tasks.length > 0) {
             htmlButtonString += `
             <li>
-             <button class="js-toggleAllTasksDoneButton">
+             <button class="section__buttons js-toggleAllTasksDoneButton">
               ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
              </button>
-             <button class="js-markAllTasksButton"
-              ${tasks.every(({ done }) => done) ? "disabled" : ""}>Ukończ wszystkie
+             <button class="section__buttons js-markAllTasksButton"
+              ${tasks.every(({ done }) => done) ? "disabled" : ""}>
+              Ukończ wszystkie
              </button >
             </li >
             `;

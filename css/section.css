@@ -7,11 +7,35 @@
 
 .section__header {
     margin: 0;
-    border-bottom: 1px solid rgb(209, 203, 203);
     padding: 20px;
+    border-bottom: 1px solid rgb(209, 203, 203);
 }
 
 .section__body {
     padding: 20px;
     word-break: break-word;
+}
+
+.section__container {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-gap: 20px;
+    align-items: center;
+    list-style: none;
+    border-bottom: 1px solid rgb(209, 203, 203);
+}
+
+.section__buttons {
+    border: 0;
+    background: none;
+    color: teal;
+    transition: 0.7s;
+}
+
+.section__buttons:hover {
+    color: hsl(180, 100%, 40%);
+}
+
+.section__header--noneBorder {
+    border: none;
 }
