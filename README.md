@@ -6,7 +6,7 @@ https://wiktorianizielska.github.io/toDoList/
 
 ![Todolist.gif](https://i.postimg.cc/mZnBF7g8/Todolist.gif)
 
-## Technologies
+## 🛠️ Technologies
 - HTML
 - CSS
 - JavaScript
