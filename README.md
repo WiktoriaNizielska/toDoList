@@ -51,6 +51,6 @@ https://wiktorianizielska.github.io/toDoList/
   - immutability
   - arrow functions
 
-- **BEM **convention
+- **BEM** convention
 
 - camelCase
